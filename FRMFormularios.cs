@@ -14,8 +14,14 @@ namespace frmTesteGitForms
 
         private void gustavoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmGustavo frmGustavo = new frmGustavo();
-            frmGustavo.ShowDialog();
+            
+            this.Hide();
+            using (frmGustavo frmGustavo = new frmGustavo())
+            {
+                frmGustavo.ShowDialog();
+            }
+            this.ShowDialog();
+            
         }
     }
 }

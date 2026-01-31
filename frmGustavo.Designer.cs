@@ -112,10 +112,10 @@
             // 
             // txtResultado
             // 
-            txtResultado.Enabled = false;
             txtResultado.Font = new Font("Segoe UI", 16F);
             txtResultado.Location = new Point(176, 160);
             txtResultado.Name = "txtResultado";
+            txtResultado.ReadOnly = true;
             txtResultado.Size = new Size(104, 36);
             txtResultado.TabIndex = 6;
             // 
@@ -185,6 +185,7 @@
             ForeColor = SystemColors.ControlLight;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmGustavo";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Gustavo";
             ResumeLayout(false);
             PerformLayout();
