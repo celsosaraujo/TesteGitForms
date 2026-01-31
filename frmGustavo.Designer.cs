@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGustavo));
             btnSoma = new Button();
             btnSubtracao = new Button();
             btnMultiplicacao = new Button();
@@ -181,7 +182,8 @@
             Controls.Add(btnMultiplicacao);
             Controls.Add(btnSubtracao);
             Controls.Add(btnSoma);
-            ForeColor = SystemColors.ControlText;
+            ForeColor = SystemColors.ControlLight;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmGustavo";
             Text = "Gustavo";
             ResumeLayout(false);
