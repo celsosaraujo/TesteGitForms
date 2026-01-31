@@ -28,45 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
+            mnuSuely = new MenuStrip();
             mniFomularios = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
+            suelyToolStripMenuItem = new ToolStripMenuItem();
+            mnuSuely.SuspendLayout();
             SuspendLayout();
             // 
-            // menuStrip1
+            // mnuSuely
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mniFomularios });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            mnuSuely.Items.AddRange(new ToolStripItem[] { mniFomularios });
+            mnuSuely.Location = new Point(0, 0);
+            mnuSuely.Name = "mnuSuely";
+            mnuSuely.Size = new Size(800, 24);
+            mnuSuely.TabIndex = 0;
+            mnuSuely.Text = "menuStrip1";
             // 
             // mniFomularios
             // 
+            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { suelyToolStripMenuItem });
             mniFomularios.Name = "mniFomularios";
             mniFomularios.Size = new Size(82, 20);
             mniFomularios.Text = "Formulários";
+            // 
+            // suelyToolStripMenuItem
+            // 
+            suelyToolStripMenuItem.Name = "suelyToolStripMenuItem";
+            suelyToolStripMenuItem.Size = new Size(180, 22);
+            suelyToolStripMenuItem.Text = "Suely";
+            suelyToolStripMenuItem.Click += suelyToolStripMenuItem_Click;
             // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            Controls.Add(mnuSuely);
+            MainMenuStrip = mnuSuely;
             Name = "frmPrincipal";
             Text = "Formulários Criativos";
             WindowState = FormWindowState.Minimized;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            mnuSuely.ResumeLayout(false);
+            mnuSuely.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private MenuStrip menuStrip1;
+        private MenuStrip mnuSuely;
         private ToolStripMenuItem mniFomularios;
+        private ToolStripMenuItem suelyToolStripMenuItem;
     }
 }

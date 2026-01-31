@@ -11,5 +11,12 @@ namespace frmTesteGitForms
         {
 
         }
+
+        private void suelyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSuely frmSuely = new frmSuely();
+            frmSuely.ShowDialog();
+
+        }
     }
 }
