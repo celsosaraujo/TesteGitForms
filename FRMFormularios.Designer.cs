@@ -30,6 +30,7 @@
         {
             menuStrip1 = new MenuStrip();
             mniFomularios = new ToolStripMenuItem();
+            mnuThiago = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,9 +45,17 @@
             // 
             // mniFomularios
             // 
+            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuThiago });
             mniFomularios.Name = "mniFomularios";
             mniFomularios.Size = new Size(82, 20);
             mniFomularios.Text = "Formulários";
+            // 
+            // mnuThiago
+            // 
+            mnuThiago.Name = "mnuThiago";
+            mnuThiago.Size = new Size(180, 22);
+            mnuThiago.Text = "Thiago";
+            mnuThiago.Click += mnuThiago_Click;
             // 
             // frmPrincipal
             // 
@@ -68,5 +77,6 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem mniFomularios;
+        private ToolStripMenuItem mnuThiago;
     }
 }
