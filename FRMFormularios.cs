@@ -11,5 +11,12 @@ namespace frmTesteGitForms
         {
 
         }
+
+        private void diegoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDiego frmDiego = new FrmDiego();
+            frmDiego.ShowDialog();
+            
+        }
     }
 }

@@ -28,45 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
+            mnuDiego = new MenuStrip();
             mniFomularios = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
+            diegoToolStripMenuItem = new ToolStripMenuItem();
+            mnuDiego.SuspendLayout();
             SuspendLayout();
             // 
-            // menuStrip1
+            // mnuDiego
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mniFomularios });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            mnuDiego.Items.AddRange(new ToolStripItem[] { mniFomularios });
+            mnuDiego.Location = new Point(0, 0);
+            mnuDiego.Name = "mnuDiego";
+            mnuDiego.Size = new Size(800, 24);
+            mnuDiego.TabIndex = 0;
+            mnuDiego.Text = "menuStrip1";
             // 
             // mniFomularios
             // 
+            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { diegoToolStripMenuItem });
             mniFomularios.Name = "mniFomularios";
             mniFomularios.Size = new Size(82, 20);
             mniFomularios.Text = "Formulários";
+            // 
+            // diegoToolStripMenuItem
+            // 
+            diegoToolStripMenuItem.Name = "diegoToolStripMenuItem";
+            diegoToolStripMenuItem.Size = new Size(180, 22);
+            diegoToolStripMenuItem.Text = "Diego";
+            diegoToolStripMenuItem.Click += diegoToolStripMenuItem_Click;
             // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            Controls.Add(mnuDiego);
+            MainMenuStrip = mnuDiego;
             Name = "frmPrincipal";
             Text = "Formulários Criativos";
             WindowState = FormWindowState.Minimized;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            mnuDiego.ResumeLayout(false);
+            mnuDiego.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private MenuStrip menuStrip1;
+        private MenuStrip mnuDiego;
         private ToolStripMenuItem mniFomularios;
+        private ToolStripMenuItem diegoToolStripMenuItem;
     }
 }
