@@ -30,6 +30,7 @@
         {
             menuStrip1 = new MenuStrip();
             mniFomularios = new ToolStripMenuItem();
+            mnuluis = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,9 +45,17 @@
             // 
             // mniFomularios
             // 
+            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuluis });
             mniFomularios.Name = "mniFomularios";
             mniFomularios.Size = new Size(82, 20);
             mniFomularios.Text = "Formulários";
+            // 
+            // mnuluis
+            // 
+            mnuluis.Name = "mnuluis";
+            mnuluis.Size = new Size(180, 22);
+            mnuluis.Text = "Luis Gustavo";
+            mnuluis.Click += mnuluis_Click;
             // 
             // frmPrincipal
             // 
@@ -58,6 +67,7 @@
             Name = "frmPrincipal";
             Text = "Formulários Criativos";
             WindowState = FormWindowState.Minimized;
+            Load += frmPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -68,5 +78,6 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem mniFomularios;
+        private ToolStripMenuItem mnuluis;
     }
 }
