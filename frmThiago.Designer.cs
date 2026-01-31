@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             dateTimePicker1 = new DateTimePicker();
+            txtNome = new TextBox();
             SuspendLayout();
             // 
             // dateTimePicker1
@@ -38,6 +39,16 @@
             dateTimePicker1.Size = new Size(256, 23);
             dateTimePicker1.TabIndex = 0;
             // 
+            // txtNome
+            // 
+            txtNome.BackColor = SystemColors.ActiveCaption;
+            txtNome.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtNome.Location = new Point(0, 416);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(136, 33);
+            txtNome.TabIndex = 1;
+            txtNome.Text = "Thiago Freitas";
+            // 
             // frmThiago
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -45,14 +56,17 @@
             BackColor = SystemColors.Control;
             BackgroundImage = Properties.Resources.status_deus_1;
             ClientSize = new Size(499, 450);
+            Controls.Add(txtNome);
             Controls.Add(dateTimePicker1);
             Name = "frmThiago";
             Text = "Formulário  do Thiago";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private DateTimePicker dateTimePicker1;
+        private TextBox txtNome;
     }
 }
