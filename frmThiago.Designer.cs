@@ -82,7 +82,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             BackgroundImage = Properties.Resources.status_deus_1;
-            ClientSize = new Size(496, 541);
+            ClientSize = new Size(500, 548);
             Controls.Add(btnMostrar);
             Controls.Add(txtNome);
             Controls.Add(dateTimePicker1);
