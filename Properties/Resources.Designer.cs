@@ -63,6 +63,16 @@ namespace frmTesteGitForms.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_2_de_fev__de_2026__19_49_43 {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image 2 de fev. de 2026, 19_49_43", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap status_deus_1 {
             get {
                 object obj = ResourceManager.GetObject("status-deus-1", resourceCulture);
