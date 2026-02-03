@@ -47,7 +47,7 @@
             // 
             txtNome.BackColor = SystemColors.ActiveCaption;
             txtNome.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtNome.Location = new Point(352, 480);
+            txtNome.Location = new Point(360, 512);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(136, 33);
             txtNome.TabIndex = 1;
