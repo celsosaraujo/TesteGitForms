@@ -59,5 +59,15 @@ namespace frmTesteGitForms.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_2_de_fev__de_2026__19_47_19 {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image 2 de fev. de 2026, 19_47_19", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
