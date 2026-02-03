@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAffonso));
-            pictureBox1 = new PictureBox();
+            picVerso = new PictureBox();
             btnVerificar = new Button();
-            lblNumero = new Label();
             lblCVV = new Label();
-            lblValidade = new Label();
             btnCancelar = new Button();
             txtNumero = new TextBox();
             txtCVV = new TextBox();
@@ -41,22 +39,27 @@
             lblInfoNum = new Label();
             lblInfoCVV = new Label();
             lblInfoVali = new Label();
-            lblRespostaNum = new Label();
             lblRespostaCVV = new Label();
             lblRespostaVal = new Label();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            picFrente = new PictureBox();
+            lblRespostaNum = new Label();
+            btnVerso = new Button();
+            btnFrente = new Button();
+            ((System.ComponentModel.ISupportInitialize)picVerso).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picFrente).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // picVerso
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(8, 24);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(432, 240);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            picVerso.BackColor = SystemColors.AppWorkspace;
+            picVerso.Image = (Image)resources.GetObject("picVerso.Image");
+            picVerso.Location = new Point(8, 32);
+            picVerso.Name = "picVerso";
+            picVerso.Size = new Size(424, 232);
+            picVerso.SizeMode = PictureBoxSizeMode.CenterImage;
+            picVerso.TabIndex = 1;
+            picVerso.TabStop = false;
+            picVerso.Visible = false;
             // 
             // btnVerificar
             // 
@@ -66,17 +69,7 @@
             btnVerificar.TabIndex = 2;
             btnVerificar.Text = "Verificar";
             btnVerificar.UseVisualStyleBackColor = true;
-          
-            // 
-            // lblNumero
-            // 
-            lblNumero.AutoSize = true;
-            lblNumero.BackColor = Color.FromArgb(128, 128, 255);
-            lblNumero.Location = new Point(43, 101);
-            lblNumero.Name = "lblNumero";
-            lblNumero.Size = new Size(76, 15);
-            lblNumero.TabIndex = 3;
-            lblNumero.Text = "N° do Cartão";
+            btnVerificar.Click += btnVerificar_Click;
             // 
             // lblCVV
             // 
@@ -84,19 +77,8 @@
             lblCVV.BackColor = Color.FromArgb(128, 128, 255);
             lblCVV.Location = new Point(43, 165);
             lblCVV.Name = "lblCVV";
-            lblCVV.Size = new Size(29, 15);
+            lblCVV.Size = new Size(0, 15);
             lblCVV.TabIndex = 4;
-            lblCVV.Text = "CVV";
-            // 
-            // lblValidade
-            // 
-            lblValidade.AutoSize = true;
-            lblValidade.BackColor = Color.FromArgb(128, 128, 255);
-            lblValidade.Location = new Point(176, 165);
-            lblValidade.Name = "lblValidade";
-            lblValidade.Size = new Size(51, 15);
-            lblValidade.TabIndex = 5;
-            lblValidade.Text = "Validade";
             // 
             // btnCancelar
             // 
@@ -106,6 +88,7 @@
             btnCancelar.TabIndex = 6;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtNumero
             // 
@@ -131,82 +114,128 @@
             // lblInfoNum
             // 
             lblInfoNum.AutoSize = true;
+            lblInfoNum.BackColor = Color.Transparent;
+            lblInfoNum.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblInfoNum.ForeColor = Color.White;
             lblInfoNum.Location = new Point(488, 48);
             lblInfoNum.Name = "lblInfoNum";
-            lblInfoNum.Size = new Size(76, 15);
+            lblInfoNum.Size = new Size(87, 17);
             lblInfoNum.TabIndex = 10;
             lblInfoNum.Text = "N° do Cartão";
             // 
             // lblInfoCVV
             // 
             lblInfoCVV.AutoSize = true;
+            lblInfoCVV.BackColor = Color.Transparent;
+            lblInfoCVV.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblInfoCVV.ForeColor = Color.White;
             lblInfoCVV.Location = new Point(488, 120);
             lblInfoCVV.Name = "lblInfoCVV";
-            lblInfoCVV.Size = new Size(29, 15);
+            lblInfoCVV.Size = new Size(34, 17);
             lblInfoCVV.TabIndex = 11;
             lblInfoCVV.Text = "CVV";
             // 
             // lblInfoVali
             // 
             lblInfoVali.AutoSize = true;
+            lblInfoVali.BackColor = Color.Transparent;
+            lblInfoVali.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblInfoVali.ForeColor = Color.White;
             lblInfoVali.Location = new Point(632, 120);
             lblInfoVali.Name = "lblInfoVali";
-            lblInfoVali.Size = new Size(51, 15);
+            lblInfoVali.Size = new Size(61, 17);
             lblInfoVali.TabIndex = 12;
             lblInfoVali.Text = "Validade";
-            // 
-            // lblRespostaNum
-            // 
-            lblRespostaNum.AutoSize = true;
-            lblRespostaNum.BackColor = Color.LightGray;
-            lblRespostaNum.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblRespostaNum.Location = new Point(57, 125);
-            lblRespostaNum.Name = "lblRespostaNum";
-            lblRespostaNum.Size = new Size(149, 20);
-            lblRespostaNum.TabIndex = 13;
-            lblRespostaNum.Text = "0000 0000 0000 0000";
             // 
             // lblRespostaCVV
             // 
             lblRespostaCVV.AutoSize = true;
             lblRespostaCVV.BackColor = Color.LightGray;
             lblRespostaCVV.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblRespostaCVV.Location = new Point(57, 190);
+            lblRespostaCVV.Location = new Point(94, 195);
             lblRespostaCVV.Name = "lblRespostaCVV";
             lblRespostaCVV.Size = new Size(33, 20);
             lblRespostaCVV.TabIndex = 14;
             lblRespostaCVV.Text = "000";
+            lblRespostaCVV.Visible = false;
             // 
             // lblRespostaVal
             // 
             lblRespostaVal.AutoSize = true;
             lblRespostaVal.BackColor = Color.LightGray;
             lblRespostaVal.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblRespostaVal.Location = new Point(184, 190);
+            lblRespostaVal.Location = new Point(224, 195);
             lblRespostaVal.Name = "lblRespostaVal";
             lblRespostaVal.Size = new Size(47, 20);
             lblRespostaVal.TabIndex = 15;
             lblRespostaVal.Text = "00/00";
+            lblRespostaVal.Visible = false;
             // 
-            // label1
+            // picFrente
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(24, 384);
-            label1.Name = "label1";
-            label1.Size = new Size(249, 30);
-            label1.TabIndex = 16;
-            label1.Text = "*OBS: Apenas para o entreterimento de Vocês \r\nNão levar a serio.\r\n";
+            picFrente.BackColor = SystemColors.AppWorkspace;
+            picFrente.Image = (Image)resources.GetObject("picFrente.Image");
+            picFrente.Location = new Point(8, 32);
+            picFrente.Name = "picFrente";
+            picFrente.Size = new Size(424, 232);
+            picFrente.SizeMode = PictureBoxSizeMode.CenterImage;
+            picFrente.TabIndex = 19;
+            picFrente.TabStop = false;
+            picFrente.Click += picFrente_Click;
+            // 
+            // lblRespostaNum
+            // 
+            lblRespostaNum.AutoSize = true;
+            lblRespostaNum.BackColor = Color.LightGray;
+            lblRespostaNum.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRespostaNum.Location = new Point(104, 178);
+            lblRespostaNum.Name = "lblRespostaNum";
+            lblRespostaNum.Size = new Size(149, 20);
+            lblRespostaNum.TabIndex = 20;
+            lblRespostaNum.Text = "0000 0000 0000 0000";
+            // 
+            // btnVerso
+            // 
+            btnVerso.FlatAppearance.BorderSize = 0;
+            btnVerso.FlatStyle = FlatStyle.Flat;
+            btnVerso.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVerso.ForeColor = Color.Black;
+            btnVerso.Location = new Point(64, 272);
+            btnVerso.Name = "btnVerso";
+            btnVerso.Size = new Size(123, 32);
+            btnVerso.TabIndex = 22;
+            btnVerso.Text = "Verso";
+            btnVerso.UseVisualStyleBackColor = true;
+            btnVerso.Click += btnVerso_Click;
+            // 
+            // btnFrente
+            // 
+            btnFrente.BackColor = Color.MediumPurple;
+            btnFrente.FlatAppearance.BorderSize = 0;
+            btnFrente.FlatStyle = FlatStyle.Flat;
+            btnFrente.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFrente.Location = new Point(216, 272);
+            btnFrente.Name = "btnFrente";
+            btnFrente.Size = new Size(123, 32);
+            btnFrente.TabIndex = 21;
+            btnFrente.Text = "Frente";
+            btnFrente.UseVisualStyleBackColor = false;
+            btnFrente.Click += btnFrente_Click;
             // 
             // frmAffonso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
+            BackColor = SystemColors.ControlLightLight;
+            BackgroundImage = Properties.Resources.building_background_kdftxs3qeo83kypr;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(769, 450);
-            Controls.Add(label1);
+            Controls.Add(btnVerso);
+            Controls.Add(btnFrente);
+            Controls.Add(lblRespostaNum);
+            Controls.Add(picFrente);
             Controls.Add(lblRespostaVal);
             Controls.Add(lblRespostaCVV);
-            Controls.Add(lblRespostaNum);
             Controls.Add(lblInfoVali);
             Controls.Add(lblInfoCVV);
             Controls.Add(lblInfoNum);
@@ -214,24 +243,22 @@
             Controls.Add(txtCVV);
             Controls.Add(txtNumero);
             Controls.Add(btnCancelar);
-            Controls.Add(lblValidade);
             Controls.Add(lblCVV);
-            Controls.Add(lblNumero);
             Controls.Add(btnVerificar);
-            Controls.Add(pictureBox1);
+            Controls.Add(picVerso);
             Name = "frmAffonso";
             Text = "Verificação de Dados";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Load += frmAffonso_Load;
+            ((System.ComponentModel.ISupportInitialize)picVerso).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picFrente).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private PictureBox pictureBox1;
+        private PictureBox picVerso;
         private Button btnVerificar;
-        private Label lblNumero;
         private Label lblCVV;
-        private Label lblValidade;
         private Button btnCancelar;
         private TextBox txtNumero;
         private TextBox txtCVV;
@@ -239,9 +266,11 @@
         private Label lblInfoNum;
         private Label lblInfoCVV;
         private Label lblInfoVali;
-        private Label lblRespostaNum;
         private Label lblRespostaCVV;
         private Label lblRespostaVal;
-        private Label label1;
+        private PictureBox picFrente;
+        private Label lblRespostaNum;
+        private Button btnVerso;
+        private Button btnFrente;
     }
 }

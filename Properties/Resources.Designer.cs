@@ -63,6 +63,16 @@ namespace frmTesteGitForms.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap building_background_kdftxs3qeo83kypr {
+            get {
+                object obj = ResourceManager.GetObject("building-background-kdftxs3qeo83kypr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Título {
             get {
                 object obj = ResourceManager.GetObject("Título", resourceCulture);
