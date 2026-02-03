@@ -288,7 +288,7 @@
             Controls.Add(txtNome);
             Controls.Add(lblNome);
             Name = "frmSuely";
-            Text = "S";
+            Text = "Suely";
             grpAvaliacao.ResumeLayout(false);
             grpAvaliacao.PerformLayout();
             ResumeLayout(false);
