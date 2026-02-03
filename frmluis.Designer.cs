@@ -78,7 +78,7 @@
             // 
             btnSigno.BackColor = Color.MediumPurple;
             btnSigno.Font = new Font("Segoe UI", 15.75F);
-            btnSigno.Location = new Point(12, 277);
+            btnSigno.Location = new Point(11, 228);
             btnSigno.Name = "btnSigno";
             btnSigno.Size = new Size(192, 47);
             btnSigno.TabIndex = 3;
@@ -89,7 +89,7 @@
             // dtNascimento
             // 
             dtNascimento.Font = new Font("Segoe UI", 15.75F);
-            dtNascimento.Location = new Point(12, 225);
+            dtNascimento.Location = new Point(514, 178);
             dtNascimento.Name = "dtNascimento";
             dtNascimento.Size = new Size(279, 35);
             dtNascimento.TabIndex = 4;
@@ -122,9 +122,8 @@
             lblPergunta.Font = new Font("Microsoft Sans Serif", 15.75F);
             lblPergunta.Location = new Point(142, 415);
             lblPergunta.Name = "lblPergunta";
-            lblPergunta.Size = new Size(99, 25);
+            lblPergunta.Size = new Size(0, 25);
             lblPergunta.TabIndex = 7;
-            lblPergunta.Text = "Pergunta";
             lblPergunta.Click += lblPergunta_Click;
             // 
             // btnVerificar
@@ -141,7 +140,7 @@
             // txtResposta
             // 
             txtResposta.Font = new Font("Microsoft Sans Serif", 15.75F);
-            txtResposta.Location = new Point(287, 461);
+            txtResposta.Location = new Point(228, 461);
             txtResposta.Name = "txtResposta";
             txtResposta.Size = new Size(255, 31);
             txtResposta.TabIndex = 9;
@@ -160,7 +159,7 @@
             btnNovaPergunta.Font = new Font("Microsoft Sans Serif", 15.75F);
             btnNovaPergunta.Location = new Point(12, 411);
             btnNovaPergunta.Name = "btnNovaPergunta";
-            btnNovaPergunta.Size = new Size(124, 44);
+            btnNovaPergunta.Size = new Size(192, 44);
             btnNovaPergunta.TabIndex = 11;
             btnNovaPergunta.Text = "Nova Pergunta";
             btnNovaPergunta.UseVisualStyleBackColor = true;

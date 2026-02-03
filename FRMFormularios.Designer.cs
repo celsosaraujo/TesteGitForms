@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            mniFomularios = new ToolStripMenuItem();
+            mnuFomularios = new ToolStripMenuItem();
             mnuluis = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mniFomularios });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFomularios });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // mniFomularios
+            // mnuFomularios
             // 
-            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuluis });
-            mniFomularios.Name = "mniFomularios";
-            mniFomularios.Size = new Size(82, 20);
-            mniFomularios.Text = "Formulários";
+            mnuFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuluis });
+            mnuFomularios.Name = "mnuFomularios";
+            mnuFomularios.Size = new Size(82, 20);
+            mnuFomularios.Text = "Formulários";
             // 
             // mnuluis
             // 
@@ -77,7 +77,7 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem mniFomularios;
+        private ToolStripMenuItem mnuFomularios;
         private ToolStripMenuItem mnuluis;
     }
 }
