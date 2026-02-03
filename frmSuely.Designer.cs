@@ -32,17 +32,17 @@
             lblNome = new Label();
             lblAvaliacao = new Label();
             txtNome = new TextBox();
-            rdbNota1 = new RadioButton();
-            rdbNota2 = new RadioButton();
-            rdbNota3 = new RadioButton();
-            rdbNota4 = new RadioButton();
-            rdbNota5 = new RadioButton();
+            rdbMuitoRuim = new RadioButton();
+            rdbRuim = new RadioButton();
+            rdbRegular = new RadioButton();
+            rdbBom = new RadioButton();
+            rdbExcelente = new RadioButton();
             grpAvaliacao = new GroupBox();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
+            chkProfessores = new CheckBox();
+            chkConteudo = new CheckBox();
+            chkMaterial = new CheckBox();
+            chkAmbiente = new CheckBox();
+            chkOutros = new CheckBox();
             label1 = new Label();
             btnLimpar = new Button();
             btnEnviar = new Button();
@@ -82,69 +82,69 @@
             txtNome.Size = new Size(432, 23);
             txtNome.TabIndex = 3;
             // 
-            // rdbNota1
+            // rdbMuitoRuim
             // 
-            rdbNota1.AutoSize = true;
-            rdbNota1.Location = new Point(80, 24);
-            rdbNota1.Name = "rdbNota1";
-            rdbNota1.Size = new Size(99, 21);
-            rdbNota1.TabIndex = 5;
-            rdbNota1.TabStop = true;
-            rdbNota1.Text = "Muito Ruim";
-            rdbNota1.UseVisualStyleBackColor = true;
+            rdbMuitoRuim.AutoSize = true;
+            rdbMuitoRuim.Location = new Point(80, 24);
+            rdbMuitoRuim.Name = "rdbMuitoRuim";
+            rdbMuitoRuim.Size = new Size(99, 21);
+            rdbMuitoRuim.TabIndex = 5;
+            rdbMuitoRuim.TabStop = true;
+            rdbMuitoRuim.Text = "Muito Ruim";
+            rdbMuitoRuim.UseVisualStyleBackColor = true;
             // 
-            // rdbNota2
+            // rdbRuim
             // 
-            rdbNota2.AutoSize = true;
-            rdbNota2.Location = new Point(208, 24);
-            rdbNota2.Name = "rdbNota2";
-            rdbNota2.Size = new Size(58, 21);
-            rdbNota2.TabIndex = 6;
-            rdbNota2.TabStop = true;
-            rdbNota2.Text = "Ruim";
-            rdbNota2.UseVisualStyleBackColor = true;
+            rdbRuim.AutoSize = true;
+            rdbRuim.Location = new Point(208, 24);
+            rdbRuim.Name = "rdbRuim";
+            rdbRuim.Size = new Size(58, 21);
+            rdbRuim.TabIndex = 6;
+            rdbRuim.TabStop = true;
+            rdbRuim.Text = "Ruim";
+            rdbRuim.UseVisualStyleBackColor = true;
             // 
-            // rdbNota3
+            // rdbRegular
             // 
-            rdbNota3.AutoSize = true;
-            rdbNota3.Location = new Point(296, 24);
-            rdbNota3.Name = "rdbNota3";
-            rdbNota3.Size = new Size(73, 21);
-            rdbNota3.TabIndex = 7;
-            rdbNota3.TabStop = true;
-            rdbNota3.Text = "Regular";
-            rdbNota3.UseVisualStyleBackColor = true;
+            rdbRegular.AutoSize = true;
+            rdbRegular.Location = new Point(296, 24);
+            rdbRegular.Name = "rdbRegular";
+            rdbRegular.Size = new Size(73, 21);
+            rdbRegular.TabIndex = 7;
+            rdbRegular.TabStop = true;
+            rdbRegular.Text = "Regular";
+            rdbRegular.UseVisualStyleBackColor = true;
             // 
-            // rdbNota4
+            // rdbBom
             // 
-            rdbNota4.AutoSize = true;
-            rdbNota4.Location = new Point(408, 24);
-            rdbNota4.Name = "rdbNota4";
-            rdbNota4.Size = new Size(54, 21);
-            rdbNota4.TabIndex = 8;
-            rdbNota4.TabStop = true;
-            rdbNota4.Text = "Bom";
-            rdbNota4.UseVisualStyleBackColor = true;
+            rdbBom.AutoSize = true;
+            rdbBom.Location = new Point(408, 24);
+            rdbBom.Name = "rdbBom";
+            rdbBom.Size = new Size(54, 21);
+            rdbBom.TabIndex = 8;
+            rdbBom.TabStop = true;
+            rdbBom.Text = "Bom";
+            rdbBom.UseVisualStyleBackColor = true;
             // 
-            // rdbNota5
+            // rdbExcelente
             // 
-            rdbNota5.AutoSize = true;
-            rdbNota5.Location = new Point(488, 24);
-            rdbNota5.Name = "rdbNota5";
-            rdbNota5.Size = new Size(84, 21);
-            rdbNota5.TabIndex = 9;
-            rdbNota5.TabStop = true;
-            rdbNota5.Text = "Excelente";
-            rdbNota5.UseVisualStyleBackColor = true;
+            rdbExcelente.AutoSize = true;
+            rdbExcelente.Location = new Point(488, 24);
+            rdbExcelente.Name = "rdbExcelente";
+            rdbExcelente.Size = new Size(84, 21);
+            rdbExcelente.TabIndex = 9;
+            rdbExcelente.TabStop = true;
+            rdbExcelente.Text = "Excelente";
+            rdbExcelente.UseVisualStyleBackColor = true;
             // 
             // grpAvaliacao
             // 
             grpAvaliacao.BackColor = Color.Transparent;
-            grpAvaliacao.Controls.Add(rdbNota5);
-            grpAvaliacao.Controls.Add(rdbNota1);
-            grpAvaliacao.Controls.Add(rdbNota4);
-            grpAvaliacao.Controls.Add(rdbNota2);
-            grpAvaliacao.Controls.Add(rdbNota3);
+            grpAvaliacao.Controls.Add(rdbExcelente);
+            grpAvaliacao.Controls.Add(rdbMuitoRuim);
+            grpAvaliacao.Controls.Add(rdbBom);
+            grpAvaliacao.Controls.Add(rdbRuim);
+            grpAvaliacao.Controls.Add(rdbRegular);
             grpAvaliacao.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             grpAvaliacao.ForeColor = SystemColors.ButtonHighlight;
             grpAvaliacao.Location = new Point(88, 168);
@@ -154,70 +154,70 @@
             grpAvaliacao.TabStop = false;
             grpAvaliacao.Text = "Nota";
             // 
-            // checkBox1
+            // chkProfessores
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.BackColor = Color.Transparent;
-            checkBox1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox1.ForeColor = SystemColors.ButtonHighlight;
-            checkBox1.Location = new Point(88, 272);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(97, 21);
-            checkBox1.TabIndex = 11;
-            checkBox1.Text = "Professores";
-            checkBox1.UseVisualStyleBackColor = false;
+            chkProfessores.AutoSize = true;
+            chkProfessores.BackColor = Color.Transparent;
+            chkProfessores.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkProfessores.ForeColor = SystemColors.ButtonHighlight;
+            chkProfessores.Location = new Point(88, 272);
+            chkProfessores.Name = "chkProfessores";
+            chkProfessores.Size = new Size(97, 21);
+            chkProfessores.TabIndex = 11;
+            chkProfessores.Text = "Professores";
+            chkProfessores.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // chkConteudo
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.BackColor = Color.Transparent;
-            checkBox2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox2.ForeColor = SystemColors.ButtonHighlight;
-            checkBox2.Location = new Point(216, 272);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(87, 21);
-            checkBox2.TabIndex = 12;
-            checkBox2.Text = "Conteúdo";
-            checkBox2.UseVisualStyleBackColor = false;
+            chkConteudo.AutoSize = true;
+            chkConteudo.BackColor = Color.Transparent;
+            chkConteudo.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkConteudo.ForeColor = SystemColors.ButtonHighlight;
+            chkConteudo.Location = new Point(216, 272);
+            chkConteudo.Name = "chkConteudo";
+            chkConteudo.Size = new Size(87, 21);
+            chkConteudo.TabIndex = 12;
+            chkConteudo.Text = "Conteúdo";
+            chkConteudo.UseVisualStyleBackColor = false;
             // 
-            // checkBox3
+            // chkMaterial
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.BackColor = Color.Transparent;
-            checkBox3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox3.ForeColor = SystemColors.ButtonHighlight;
-            checkBox3.Location = new Point(320, 272);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(76, 21);
-            checkBox3.TabIndex = 13;
-            checkBox3.Text = "Material";
-            checkBox3.UseVisualStyleBackColor = false;
+            chkMaterial.AutoSize = true;
+            chkMaterial.BackColor = Color.Transparent;
+            chkMaterial.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkMaterial.ForeColor = SystemColors.ButtonHighlight;
+            chkMaterial.Location = new Point(320, 272);
+            chkMaterial.Name = "chkMaterial";
+            chkMaterial.Size = new Size(76, 21);
+            chkMaterial.TabIndex = 13;
+            chkMaterial.Text = "Material";
+            chkMaterial.UseVisualStyleBackColor = false;
             // 
-            // checkBox4
+            // chkAmbiente
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.BackColor = Color.Transparent;
-            checkBox4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox4.ForeColor = SystemColors.ButtonHighlight;
-            checkBox4.Location = new Point(416, 272);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(86, 21);
-            checkBox4.TabIndex = 14;
-            checkBox4.Text = "Ambiente";
-            checkBox4.UseVisualStyleBackColor = false;
+            chkAmbiente.AutoSize = true;
+            chkAmbiente.BackColor = Color.Transparent;
+            chkAmbiente.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkAmbiente.ForeColor = SystemColors.ButtonHighlight;
+            chkAmbiente.Location = new Point(416, 272);
+            chkAmbiente.Name = "chkAmbiente";
+            chkAmbiente.Size = new Size(86, 21);
+            chkAmbiente.TabIndex = 14;
+            chkAmbiente.Text = "Ambiente";
+            chkAmbiente.UseVisualStyleBackColor = false;
             // 
-            // checkBox5
+            // chkOutros
             // 
-            checkBox5.AutoSize = true;
-            checkBox5.BackColor = Color.Transparent;
-            checkBox5.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox5.ForeColor = SystemColors.Control;
-            checkBox5.Location = new Point(520, 272);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(69, 21);
-            checkBox5.TabIndex = 15;
-            checkBox5.Text = "Outros";
-            checkBox5.UseVisualStyleBackColor = false;
+            chkOutros.AutoSize = true;
+            chkOutros.BackColor = Color.Transparent;
+            chkOutros.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkOutros.ForeColor = SystemColors.Control;
+            chkOutros.Location = new Point(520, 272);
+            chkOutros.Name = "chkOutros";
+            chkOutros.Size = new Size(69, 21);
+            chkOutros.TabIndex = 15;
+            chkOutros.Text = "Outros";
+            chkOutros.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -278,11 +278,11 @@
             Controls.Add(btnEnviar);
             Controls.Add(btnLimpar);
             Controls.Add(label1);
-            Controls.Add(checkBox5);
-            Controls.Add(checkBox4);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
+            Controls.Add(chkOutros);
+            Controls.Add(chkAmbiente);
+            Controls.Add(chkMaterial);
+            Controls.Add(chkConteudo);
+            Controls.Add(chkProfessores);
             Controls.Add(lblAvaliacao);
             Controls.Add(grpAvaliacao);
             Controls.Add(txtNome);
@@ -300,17 +300,17 @@
         private Label lblNome;
         private Label lblAvaliacao;
         private TextBox txtNome;
-        private RadioButton rdbNota1;
-        private RadioButton rdbNota2;
-        private RadioButton rdbNota3;
-        private RadioButton rdbNota4;
-        private RadioButton rdbNota5;
+        private RadioButton rdbMuitoRuim;
+        private RadioButton rdbRuim;
+        private RadioButton rdbRegular;
+        private RadioButton rdbBom;
+        private RadioButton rdbExcelente;
         private GroupBox grpAvaliacao;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox4;
-        private CheckBox checkBox5;
+        private CheckBox chkProfessores;
+        private CheckBox chkConteudo;
+        private CheckBox chkMaterial;
+        private CheckBox chkAmbiente;
+        private CheckBox chkOutros;
         private Label label1;
         private Button btnLimpar;
         private Button btnEnviar;
