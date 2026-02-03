@@ -11,5 +11,11 @@ namespace frmTesteGitForms
         {
 
         }
+
+        private void mnuCelso_Click(object sender, EventArgs e)
+        {
+            frmCelso tela = new frmCelso();
+            tela.ShowDialog();
+        }
     }
 }
