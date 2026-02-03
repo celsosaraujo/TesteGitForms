@@ -12,6 +12,18 @@ namespace frmTesteGitForms
 
         }
 
+        private void mnuCelso_Click(object sender, EventArgs e)
+        {
+            frmCelso tela = new frmCelso();
+            tela.ShowDialog();
+        }
+
+        private void mnuThiago_Click(object sender, EventArgs e)
+        {
+            frmThiago tela = new frmThiago();
+            tela.ShowDialog();
+        }
+
         private void gustavoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
