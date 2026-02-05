@@ -32,32 +32,23 @@
             mniFomularios = new ToolStripMenuItem();
             mnuCelso = new ToolStripMenuItem();
             mnuThiago = new ToolStripMenuItem();
-            mnuGustavo = new ToolStripMenuItem();
-            mnuFomularios = new ToolStripMenuItem();
+            mnuGustavo = new ToolStripMenuItem();            
             mnuluis = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFomularios });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mniFomularios });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
-            // 
-            // mnuFomularios
-            // 
-            mnuFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuluis });
-            mnuFomularios.Name = "mnuFomularios";
-            mnuFomularios.Size = new Size(82, 20);
-            mnuFomularios.Text = "Formulários";
-            // 
-            // mnuluis
-            // 
+            
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuCelso,mnuThiago });
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuGustavo });
+            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuluis });
             mniFomularios.Name = "mniFomularios";
             mniFomularios.Size = new Size(82, 20);
             mniFomularios.Text = "Formulários";
@@ -109,8 +100,7 @@
         private ToolStripMenuItem mniFomularios;
         private ToolStripMenuItem mnuCelso;
         private ToolStripMenuItem mnuThiago;
-        private ToolStripMenuItem mnuGustavo;
-        private ToolStripMenuItem mnuFomularios;
+        private ToolStripMenuItem mnuGustavo;                
         private ToolStripMenuItem mnuluis;
     }
 }
