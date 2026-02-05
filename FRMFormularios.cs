@@ -35,5 +35,16 @@ namespace frmTesteGitForms
             this.ShowDialog();
             
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuluis_Click(object sender, EventArgs e)
+        {
+            frmluis tela = new frmluis();
+            tela.ShowDialog();
+        }
     }
 }

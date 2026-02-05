@@ -79,5 +79,14 @@ namespace frmTesteGitForms.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        internal static System.Drawing.Bitmap ChatGPT_Image_30_de_jan__de_2026__21_17_46
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("ChatGPT Image 30 de jan. de 2026, 21_17_46", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

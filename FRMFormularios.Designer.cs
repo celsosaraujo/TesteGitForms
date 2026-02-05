@@ -33,19 +33,28 @@
             mnuCelso = new ToolStripMenuItem();
             mnuThiago = new ToolStripMenuItem();
             mnuGustavo = new ToolStripMenuItem();
+            mnuFomularios = new ToolStripMenuItem();
+            mnuluis = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mniFomularios });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFomularios });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // mniFomularios
+            // mnuFomularios
+            // 
+            mnuFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuluis });
+            mnuFomularios.Name = "mnuFomularios";
+            mnuFomularios.Size = new Size(82, 20);
+            mnuFomularios.Text = "Formulários";
+            // 
+            // mnuluis
             // 
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuCelso,mnuThiago });
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuGustavo });
@@ -72,6 +81,10 @@
             mnuGustavo.Size = new Size(180, 22);
             mnuGustavo.Text = "Gustavo";
             mnuGustavo.Click += gustavoToolStripMenuItem_Click;
+            mnuluis.Name = "mnuluis";
+            mnuluis.Size = new Size(180, 22);
+            mnuluis.Text = "Luis Gustavo";
+            mnuluis.Click += mnuluis_Click;
             // 
             // frmPrincipal
             // 
@@ -83,6 +96,7 @@
             Name = "frmPrincipal";
             Text = "Formulários Criativos";
             WindowState = FormWindowState.Minimized;
+            Load += frmPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -96,5 +110,7 @@
         private ToolStripMenuItem mnuCelso;
         private ToolStripMenuItem mnuThiago;
         private ToolStripMenuItem mnuGustavo;
+        private ToolStripMenuItem mnuFomularios;
+        private ToolStripMenuItem mnuluis;
     }
 }
