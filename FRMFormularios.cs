@@ -11,5 +11,12 @@ namespace frmTesteGitForms
         {
 
         }
+
+        private void mniPedro_Click(object sender, EventArgs e)
+        {
+            frmPedroMartins frmPedroMartins = new frmPedroMartins();
+            frmPedroMartins.ShowDialog();
+
+        }
     }
 }
