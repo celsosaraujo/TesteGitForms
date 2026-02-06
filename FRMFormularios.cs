@@ -59,5 +59,12 @@ namespace frmTesteGitForms
             frmAffonso tela = new frmAffonso();
             tela.ShowDialog();
         }
+
+        private void mniPedro_Click(object sender, EventArgs e)
+        {
+            frmPedroMartins frmPedroMartins = new frmPedroMartins();
+            frmPedroMartins.ShowDialog();
+
+        }
     }
 }

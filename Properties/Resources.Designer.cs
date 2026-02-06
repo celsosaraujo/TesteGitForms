@@ -78,12 +78,30 @@ namespace frmTesteGitForms.Properties {
             }
         }
 
+        internal static System.Drawing.Bitmap Cartaz1
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Cartaz1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap status_deus_1 {
         get {
                 object obj = ResourceManager.GetObject("status-deus-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap Cartaz2
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Cartaz2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -109,6 +127,18 @@ namespace frmTesteGitForms.Properties {
             get
             {
                 object obj = ResourceManager.GetObject("Título", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cartaz3
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Cartaz3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
