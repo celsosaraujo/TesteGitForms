@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            mnuDiego = new MenuStrip();
+            menuStrip1 = new MenuStrip();
             mniFomularios = new ToolStripMenuItem();
             diegoToolStripMenuItem = new ToolStripMenuItem();
-            mnuDiego.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // mnuDiego
+            // menuStrip1
             // 
-            mnuDiego.Items.AddRange(new ToolStripItem[] { mniFomularios });
-            mnuDiego.Location = new Point(0, 0);
-            mnuDiego.Name = "mnuDiego";
-            mnuDiego.Size = new Size(800, 24);
-            mnuDiego.TabIndex = 0;
-            mnuDiego.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mniFomularios });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // mniFomularios
             // 
@@ -62,20 +62,20 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(mnuDiego);
-            MainMenuStrip = mnuDiego;
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "frmPrincipal";
             Text = "Formulários Criativos";
             WindowState = FormWindowState.Minimized;
-            mnuDiego.ResumeLayout(false);
-            mnuDiego.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private MenuStrip mnuDiego;
+        private MenuStrip menuStrip1;
         private ToolStripMenuItem mniFomularios;
         private ToolStripMenuItem diegoToolStripMenuItem;
     }
