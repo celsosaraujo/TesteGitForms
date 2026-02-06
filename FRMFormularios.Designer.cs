@@ -37,6 +37,7 @@
             diegoToolStripMenuItem = new ToolStripMenuItem();
             mnuAffonso = new ToolStripMenuItem();
             mniPedro = new ToolStripMenuItem();
+            mnuHanna = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,6 +59,7 @@
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { diegoToolStripMenuItem });
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuAffonso });
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mniPedro });
+            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuHanna });
             mniFomularios.Name = "mniFomularios";
             mniFomularios.Size = new Size(82, 20);
             mniFomularios.Text = "Formulários";
@@ -107,6 +109,13 @@
             mniPedro.Text = "Pedro";
             mniPedro.Click += mniPedro_Click;
             // 
+            // mnuHanna
+            // 
+            mnuHanna.Name = "mnuHanna";
+            mnuHanna.Size = new Size(180, 22);
+            mnuHanna.Text = "Hanna";
+            mnuHanna.Click += hannaToolStripMenuItem_Click;
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -135,5 +144,6 @@
         private ToolStripMenuItem diegoToolStripMenuItem;
         private ToolStripMenuItem mnuAffonso;
         private ToolStripMenuItem mniPedro;
+        private ToolStripMenuItem mnuHanna;
     }
 }

@@ -66,5 +66,11 @@ namespace frmTesteGitForms
             frmPedroMartins.ShowDialog();
 
         }
+
+        private void hannaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRMHanna frmHanna = new FRMHanna();
+            frmHanna.ShowDialog();
+        }
     }
 }
