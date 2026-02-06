@@ -17,7 +17,7 @@ namespace frmTesteGitForms
         {
             InitializeComponent();
         }
-        void Arredondar(Control c, int raio)
+        public void Arredondar(Control c, int raio)
         {
             GraphicsPath path = new GraphicsPath();
 
@@ -37,7 +37,12 @@ namespace frmTesteGitForms
             Arredondar(btnCancelar, btnFrente.Height);
         }
 
-
+        private void LimparCampos()
+        {
+            txtCVV.Clear();
+            txtNumero.Clear();
+            txtValidade.Clear();
+        }
 
         private void btnVerificar_Click(object sender, EventArgs e)
         {
@@ -51,6 +56,7 @@ namespace frmTesteGitForms
 
             MessageBox.Show("Cartão cadastrado com sucesso!");
 
+            LimparCampos();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -58,6 +64,8 @@ namespace frmTesteGitForms
             lblRespostaVal.Text = string.Empty;
             lblRespostaNum.Text= string.Empty;
             lblRespostaCVV.Text= string.Empty;
+
+            LimparCampos();
         }
 
         private void picFrente_Click(object sender, EventArgs e)
@@ -66,14 +74,14 @@ namespace frmTesteGitForms
         }
 
         
-        void SelecionarFrente()
+        public void SelecionarFrente()
         {
             btnFrente.BackColor = Color.MediumPurple;
             btnVerso.BackColor = Color.White;
 
         }
 
-        void SelecionarVerso()
+        public void SelecionarVerso()
         {
             btnVerso.BackColor = Color.MediumPurple;
             btnFrente.BackColor = Color.White;
