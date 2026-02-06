@@ -46,5 +46,12 @@ namespace frmTesteGitForms
             frmluis tela = new frmluis();
             tela.ShowDialog();
         }
+
+        private void diegoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDiego frmDiego = new FrmDiego();
+            frmDiego.ShowDialog();
+            
+        }
     }
 }
