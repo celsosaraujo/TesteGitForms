@@ -53,5 +53,11 @@ namespace frmTesteGitForms
             frmDiego.ShowDialog();
             
         }
+
+        private void affonsoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAffonso tela = new frmAffonso();
+            tela.ShowDialog();
+        }
     }
 }
