@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            mnuSuely = new MenuStrip();
+            menuStrip1 = new MenuStrip();
             mniFomularios = new ToolStripMenuItem();
             suelyToolStripMenuItem = new ToolStripMenuItem();
-            mnuSuely.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // mnuSuely
+            // menuStrip1
             // 
-            mnuSuely.Items.AddRange(new ToolStripItem[] { mniFomularios });
-            mnuSuely.Location = new Point(0, 0);
-            mnuSuely.Name = "mnuSuely";
-            mnuSuely.Size = new Size(800, 24);
-            mnuSuely.TabIndex = 0;
-            mnuSuely.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mniFomularios });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // mniFomularios
             // 
@@ -53,7 +53,7 @@
             // suelyToolStripMenuItem
             // 
             suelyToolStripMenuItem.Name = "suelyToolStripMenuItem";
-            suelyToolStripMenuItem.Size = new Size(180, 22);
+            suelyToolStripMenuItem.Size = new Size(102, 22);
             suelyToolStripMenuItem.Text = "Suely";
             suelyToolStripMenuItem.Click += suelyToolStripMenuItem_Click;
             // 
@@ -62,20 +62,20 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(mnuSuely);
-            MainMenuStrip = mnuSuely;
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "frmPrincipal";
             Text = "Formulários Criativos";
             WindowState = FormWindowState.Minimized;
-            mnuSuely.ResumeLayout(false);
-            mnuSuely.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private MenuStrip mnuSuely;
+        private MenuStrip menuStrip1;
         private ToolStripMenuItem mniFomularios;
         private ToolStripMenuItem suelyToolStripMenuItem;
     }
