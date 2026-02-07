@@ -79,5 +79,13 @@ namespace frmTesteGitForms
             frmSuely.ShowDialog();
 
         }
+
+        private void mniElias_Click(object sender, EventArgs e)
+        {
+            FRMFElias batalha = new FRMFElias();
+            batalha.Owner = this;
+            batalha.Show();
+            this.Hide();
+        }
     }
 }
