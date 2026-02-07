@@ -41,6 +41,8 @@
             suelyToolStripMenuItem = new ToolStripMenuItem();
             mniElias = new ToolStripMenuItem();
             mnuPaulo = new ToolStripMenuItem();
+            mnuGustavo = new ToolStripMenuItem();
+            mnuMatheus = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -66,10 +68,10 @@
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { suelyToolStripMenuItem });
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mniElias });
             mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuPaulo });
+            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuCelso, mnuThiago, mnuGustavo, mnuMatheus });
             mniFomularios.Name = "mniFomularios";
             mniFomularios.Size = new Size(82, 20);
             mniFomularios.Text = "Formulários";
-
             // 
             // mnuCelso
             // 
@@ -77,7 +79,9 @@
             mnuCelso.Size = new Size(180, 22);
             mnuCelso.Text = "Celso";
             mnuCelso.Click += mnuCelso_Click;
-
+            // 
+            // mnuThiago
+            // 
             mnuThiago.Name = "mnuThiago";
             mnuThiago.Size = new Size(180, 22);
             mnuThiago.Text = "Thiago";
@@ -143,6 +147,13 @@
             mnuPaulo.Text = "paulo";
             mnuPaulo.Click += PauloToolStripMenuItem_Click;
             // 
+            // mnuMatheus
+            // 
+            mnuMatheus.Name = "mnuMatheus";
+            mnuMatheus.Size = new Size(180, 22);
+            mnuMatheus.Text = "Matheus";
+            mnuMatheus.Click += mnuMatheus_Click;
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -176,5 +187,7 @@
         private ToolStripMenuItem suelyToolStripMenuItem;
         private ToolStripMenuItem mniElias;
         private ToolStripMenuItem mnuPaulo;
+        private ToolStripMenuItem mnuGustavo;
+        private ToolStripMenuItem mnuMatheus;
     }
 }

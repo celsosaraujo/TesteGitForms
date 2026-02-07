@@ -27,14 +27,21 @@ namespace frmTesteGitForms
 
         private void gustavoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             this.Hide();
             using (frmGustavo frmGustavo = new frmGustavo())
             {
                 frmGustavo.ShowDialog();
             }
             this.ShowDialog();
-            
+
+        }
+
+        private void mnuMatheus_Click(object sender, EventArgs e)
+        {
+            frmMatheus tela = new frmMatheus();
+            tela.ShowDialog();
+
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
