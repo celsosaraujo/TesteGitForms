@@ -72,5 +72,12 @@ namespace frmTesteGitForms
             FRMHanna frmHanna = new FRMHanna();
             frmHanna.ShowDialog();
         }
+
+        private void suelyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSuely frmSuely = new frmSuely();
+            frmSuely.ShowDialog();
+
+        }
     }
 }

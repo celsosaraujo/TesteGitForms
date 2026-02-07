@@ -142,5 +142,13 @@ namespace frmTesteGitForms.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap senac_logo_png_seeklogo_306776_removebg_preview
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("senac-logo-png_seeklogo-306776-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
