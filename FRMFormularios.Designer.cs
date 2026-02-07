@@ -186,8 +186,7 @@
         private ToolStripMenuItem mnuHanna;
         private ToolStripMenuItem suelyToolStripMenuItem;
         private ToolStripMenuItem mniElias;
-        private ToolStripMenuItem mnuPaulo;
-        private ToolStripMenuItem mnuGustavo;
+        private ToolStripMenuItem mnuPaulo;        
         private ToolStripMenuItem mnuMatheus;
     }
 }
