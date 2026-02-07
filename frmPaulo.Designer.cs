@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPaulo));
             mnuSPaulo = new MenuStrip();
-            formulárioToolStripMenuItem = new ToolStripMenuItem();
-            mnuPaulo = new ToolStripMenuItem();
             lblNome = new Label();
             txtNome = new TextBox();
             lblPatente = new Label();
@@ -40,32 +38,16 @@
             cmbSituacao = new ComboBox();
             btnConfirmarStatus = new Button();
             pictureBox1 = new PictureBox();
-            mnuSPaulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // mnuSPaulo
             // 
-            mnuSPaulo.Items.AddRange(new ToolStripItem[] { formulárioToolStripMenuItem });
             mnuSPaulo.Location = new Point(0, 0);
             mnuSPaulo.Name = "mnuSPaulo";
             mnuSPaulo.Size = new Size(520, 24);
             mnuSPaulo.TabIndex = 0;
             mnuSPaulo.Text = "menuStrip1";
-            // 
-            // formulárioToolStripMenuItem
-            // 
-            formulárioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mnuPaulo });
-            formulárioToolStripMenuItem.Name = "formulárioToolStripMenuItem";
-            formulárioToolStripMenuItem.Size = new Size(77, 20);
-            formulárioToolStripMenuItem.Text = "Formulário";
-            // 
-            // mnuPaulo
-            // 
-            mnuPaulo.Name = "mnuPaulo";
-            mnuPaulo.Size = new Size(104, 22);
-            mnuPaulo.Text = "Paulo";
-            mnuPaulo.Click += mnuPaulo_Click;
             // 
             // lblNome
             // 
@@ -165,8 +147,6 @@
             MainMenuStrip = mnuSPaulo;
             Name = "frmPaulo";
             Text = "frmPaulo";
-            mnuSPaulo.ResumeLayout(false);
-            mnuSPaulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -175,8 +155,6 @@
         #endregion
 
         private MenuStrip mnuSPaulo;
-        private ToolStripMenuItem formulárioToolStripMenuItem;
-        private ToolStripMenuItem mnuPaulo;
         private Label lblNome;
         private TextBox txtNome;
         private Label lblPatente;

@@ -26,21 +26,17 @@ namespace frmTesteGitForms
             cmbPatente.Items.Add("Sargento");
         }
 
-        private void mnuPaulo_Click(object sender, EventArgs e)
-        {
-            frmPaulo tela = new frmPaulo();
-            tela.ShowDialog();
-        }
+        
 
         private void cmbPatente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbPatente.SelectedIndex = 0;
+            
         }
 
 
         private void cmbSituacao_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbSituacao.SelectedIndex = 0;
+            
         }
 
         private void btnConfirmarStatus_Click(object sender, EventArgs e)
@@ -51,7 +47,13 @@ namespace frmTesteGitForms
                 return;
             }
 
-            string nome = txtNome.Text;
+            string nome = txtNome.Text.Trim();
+            if (nome.Split(' ').Length < 2)
+            {
+                MessageBox.Show("Digite nome e sobrenome.", "Nome incompleto");
+                txtNome.Focus();
+                return;
+            }
             string patente = cmbPatente.SelectedItem?.ToString() ?? string.Empty;
             string situacao = cmbSituacao.SelectedItem?.ToString() ?? string.Empty;
 

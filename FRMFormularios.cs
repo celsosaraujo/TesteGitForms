@@ -11,5 +11,11 @@ namespace frmTesteGitForms
         {
 
         }
+
+        private void PauloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPaulo frmPaulo = new frmPaulo();
+            frmPaulo.Show();
+        }
     }
 }
