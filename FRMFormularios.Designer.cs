@@ -30,7 +30,7 @@
         {
             menuStrip1 = new MenuStrip();
             mniFomularios = new ToolStripMenuItem();
-            PauloToolStripMenuItem = new ToolStripMenuItem();
+            mnuPaulo = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -45,17 +45,17 @@
             // 
             // mniFomularios
             // 
-            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { PauloToolStripMenuItem });
+            mniFomularios.DropDownItems.AddRange(new ToolStripItem[] { mnuPaulo });
             mniFomularios.Name = "mniFomularios";
             mniFomularios.Size = new Size(82, 20);
             mniFomularios.Text = "Formulários";
             // 
-            // PauloToolStripMenuItem
+            // mnuPaulo
             // 
-            PauloToolStripMenuItem.Name = "PauloToolStripMenuItem";
-            PauloToolStripMenuItem.Size = new Size(180, 22);
-            PauloToolStripMenuItem.Text = "paulo";
-            PauloToolStripMenuItem.Click += PauloToolStripMenuItem_Click;
+            mnuPaulo.Name = "mnuPaulo";
+            mnuPaulo.Size = new Size(180, 22);
+            mnuPaulo.Text = "paulo";
+            mnuPaulo.Click += PauloToolStripMenuItem_Click;
             // 
             // frmPrincipal
             // 
@@ -65,6 +65,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "frmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Formulários Criativos";
             WindowState = FormWindowState.Minimized;
             menuStrip1.ResumeLayout(false);
@@ -77,6 +78,6 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem mniFomularios;
-        private ToolStripMenuItem PauloToolStripMenuItem;
+        private ToolStripMenuItem mnuPaulo;
     }
 }

@@ -1,5 +1,6 @@
 namespace frmTesteGitForms
 {
+
     public partial class frmPrincipal : Form
     {
         public frmPrincipal()
@@ -15,7 +16,9 @@ namespace frmTesteGitForms
         private void PauloToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPaulo frmPaulo = new frmPaulo();
-            frmPaulo.Show();
+            frmPaulo.ShowDialog();
         }
+
+       
     }
 }

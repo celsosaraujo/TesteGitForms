@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPaulo));
-            mnuSPaulo = new MenuStrip();
             lblNome = new Label();
             txtNome = new TextBox();
             lblPatente = new Label();
@@ -40,14 +39,6 @@
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // mnuSPaulo
-            // 
-            mnuSPaulo.Location = new Point(0, 0);
-            mnuSPaulo.Name = "mnuSPaulo";
-            mnuSPaulo.Size = new Size(520, 24);
-            mnuSPaulo.TabIndex = 0;
-            mnuSPaulo.Text = "menuStrip1";
             // 
             // lblNome
             // 
@@ -95,7 +86,6 @@
             cmbPatente.Name = "cmbPatente";
             cmbPatente.Size = new Size(128, 23);
             cmbPatente.TabIndex = 6;
-            cmbPatente.SelectedIndexChanged += cmbPatente_SelectedIndexChanged;
             // 
             // cmbSituacao
             // 
@@ -105,7 +95,6 @@
             cmbSituacao.Name = "cmbSituacao";
             cmbSituacao.Size = new Size(128, 23);
             cmbSituacao.TabIndex = 7;
-            cmbSituacao.SelectedIndexChanged += cmbSituacao_SelectedIndexChanged;
             // 
             // btnConfirmarStatus
             // 
@@ -123,7 +112,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(296, 16);
+            pictureBox1.Location = new Point(296, 39);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(216, 216);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -143,9 +132,8 @@
             Controls.Add(lblPatente);
             Controls.Add(txtNome);
             Controls.Add(lblNome);
-            Controls.Add(mnuSPaulo);
-            MainMenuStrip = mnuSPaulo;
             Name = "frmPaulo";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmPaulo";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -153,8 +141,6 @@
         }
 
         #endregion
-
-        private MenuStrip mnuSPaulo;
         private Label lblNome;
         private TextBox txtNome;
         private Label lblPatente;
